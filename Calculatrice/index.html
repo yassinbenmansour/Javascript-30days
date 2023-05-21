@@ -8,24 +8,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.min.css">
   </head>
   <body>
-    
-  <label for="num1">Number 1:</label>
-  <input type="number" id="num1"><br><br>
+        <div class="container">
+                <label for="nbr1">Number 1 :</label>
+                <input type="text" id="nbr1">
+                <label for="nbr2">Number 2 :</label>
+                <input type="text" id="nbr2">
+               <p id="result"></p>
 
-  <label for="num2">Number 2:</label>
-  <input type="number" id="num2"><br><br>
+                <button onclick="add()">+</button>
+                <button onclick="sous()">-</button>
+                <button onclick="multi()">*</button>
+                <button onclick="div()">/</button>
 
-  <label for="operation">Operation:</label>
-  <select id="operation">
-    <option value="add">Add</option>
-    <option value="sub">Sub</option>
-    <option value="mul">Mul</option>
-    <option value="div">Div</option>
-  </select><br><br>
 
-  <button onclick="calculate()">Calcul</button><br><br>
-
-  <div id="result"></div>
+        
+        </div>
   </body>
   <script src="main.js"></script>
 
