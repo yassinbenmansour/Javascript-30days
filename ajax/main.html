@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX Example</title>
+<p> AJAX (Asynchronous JavaScript and XML): 
+<br>est une technique pour envoyer des requêtes HTTP asynchrones depuis une page web vers un serveur,
+<br> permettant de mettre à jour dynamiquement le contenu de la page sans rechargement complet.   
+</p>
+</head>
+<body>
+  <button onclick="loadData()">Charger les données</button>
+  <div id="result"></div>
+  <script>
+ function loadData() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            //code
+            document.getElementById("result").innerHTML = xhr.responseText;
+          }
+        };
+        xhr.open("GET", "https://api.jsonbin.io/v3/b/626cff2a25069545a32b25d8", true);
+        xhr.send();
+      }
+    </script>
+      <script src="jquery.min.js" ></script>
+      <script>
+      /*   function loadData() {
+        $('#result').load('https://api.jsonbin.io/v3/b/626cff2a25069545a32b25d8');
+        }
+*/
+  </script>
+</body>
+</html>
