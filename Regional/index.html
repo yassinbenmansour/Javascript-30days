@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div style="border: 3px solid black">
+      <div style="margin-left: 10px">
+        <h1>Commander des Consoles</h1>
+        <h5>console</h5>
+
+        Choisir un console: <select id="consoles" ></select><br>
+
+        <br />
+        <br />
+        Quantite: <input type="number" id="quantite" /><br /><br />
+        <button class="btn btn-primary" id="addToCart" >Ajouter au panier</button>
+        <br /><br />
+        <h1>Panier de Commandes</h1>
+
+        <form action="">
+          <table class="table" id="Panier">
+            <thead>
+              <th>REFERENCE</th>
+              <th>PRIX</th>
+              <th>QUANTITE</th>
+              <th>IMAGE</th>
+              <th>ACTION</th>
+            </thead>
+            <tbody></tbody>
+          </table>
+
+          <span>Total HT : <span id="ht">0</span> DHS</span>
+          <br />
+          <span>Total TTC :<span id="ttc">0</span> DHS</span>
+          <br />
+          <br />
+          <input type="submit" value="Commander" class="btn btn-primary mb-5" />
+          
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
